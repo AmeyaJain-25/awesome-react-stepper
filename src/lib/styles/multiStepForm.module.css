@@ -1,0 +1,44 @@
+.progressBarDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+}
+.steps {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.step {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #acaca6;
+  border-radius: 50%;
+  transition: background 1s;
+}
+.step.selected {
+  border: 2px solid red;
+}
+.step.completed {
+  border: 2px solid #1b589e;
+  background: #4b81bd;
+}
+.progress {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  border-bottom: 2px solid #acaca6;
+  z-index: -1;
+}
+.percent {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border-bottom: 2px solid #1b589e;
+  z-index: 1;
+  transition: width 1s;
+}
