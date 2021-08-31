@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+<p align="center"> 
+    <img src="./doc/images/logo-manifest.png" align="center" height="150"></img>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">React Multi Step Form</h1> 
+<h3 align="center"> A Multi Step form with completely customisable,</br>  controlled and responsive 🚀 </h3>
 
-## Available Scripts
+<p align="center">
+  <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fashutosh1919%2Freact-awesome-loaders&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+  <a href="https://nodejs.org/en/blog/release/v12.18.3/"><img alt="NodeJS" src="https://img.shields.io/badge/node-12.18.3-important?style=flat-square" /></a>
+  <a href="https://www.npmjs.com/package/npm/v/6.14.6"><img alt="NPM" src="https://img.shields.io/badge/npm-6.14.6-61DAFB?style=flat-square" /></a>
+  <a href="https://www.gatsbyjs.com/"><img alt="Made With Gatsby" src="https://img.shields.io/badge/made%20with-gatsby-blueviolet?style=flat-square" /></a>
+  <a href="https://github.com/prettier/prettier"><img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square?style=flat-square" /></a>
+  <br/>
+  <a href="https://app.netlify.com/sites/awesome-loaders/deploys"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/d9df8e0f-f743-488a-bebb-880c81383d35/deploy-status?style=flat-square" /></a>
+  <a href="https://travis-ci.org/badges/badgerbadgerbadger"><img alt="Build Status" src="http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square?style=flat-square" /></a>
+  <a href="http://badges.mit-license.org/"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
+  <a href="https://github.com/ashutosh1919/react-awesome-loaders/commits/main"><img alt="Maintenance" src="https://img.shields.io/badge/maintained-yes-green.svg?style=flat-square" /></a>
+  <a href="https://awesome-loaders.netlify.app/"><img alt="Website" src="https://img.shields.io/badge/website-up-yellow?style=flat-square" /></a>
+  <a href="https://img.shields.io/badge/price-free-ff69b4"><img alt="Price" src="https://img.shields.io/badge/price-free-ff69b4?style=flat-square" /></a>
+</p>
 
-In the project directory, you can run:
+<!-- Add GIF of working -->
 
-### `npm start`
+:star: Star us on GitHub — it helps!  
+To view a documentation website, [click here]()
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Getting Started 🎬
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To use **Multi Step Form**, install the NPM package.
 
-### `npm test`
+## Install NPM Package
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install react-multi-step-form
+```
 
-### `npm run build`
+## Import And Use
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```jsx highlight={1,6}
+import MultiContainer from "react-multi-step-form";
+import MultiStepForm from "react-multi-step-form";
+...
+function MultiStepFormComponent(props) {
+    const styles = {
+                    background: "tomato",
+                    padding: "10px",
+                    margin: "5px",
+                    borderRadius: "4px" }
+    return (
+        ...
+        <MultiContainer>
+            <MultiStepForm
+                progressBar 
+                compStyle={styles}>
+                <div>Step 1</div>
+                <div>Step 2</div>
+                <div>Step 3</div>
+            </MultiStepForm>
+        </MultiContainer>
+        ...
+    );
+}
+export default MultiStepFormComponent
+```
+<p align="center"> 
+    <img src="./src/images/defaultForm.png" align="center" height="150"></img>
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The Multi Step Form is easy to import in any component.
+The Form is responsive, totally customizable and with many features to change according to the user.   
+You can provide a fixed width too for the form.
+Read the complete in detail documentation on the [project website]().
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# License 📄
 
-### `npm run eject`
+<!-- This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ashutosh1919/react-awesome-loaders/blob/main/LICENSE) file for details.
+You can use this project for personal as well as commercial purposes. But if you think you have modified the project and built something really good, we will humbly request you to raise the pull request and share with the opensource community. -->
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- Add LICENSE here -->
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Contributing 💡
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+We have provided detailed description on how & what to contribute to this project on [website](https://awesome-loaders.netlify.app/docs/contributing/). Please, take a look.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+If you can help us with these. Please don't hesitate to open an [pull request](https://github.com/ashutosh1919/react-awesome-loaders/pulls) or [issue](https://github.com/ashutosh1919/react-awesome-loaders/issues).
 
-## Learn More
+# Contributors ✨
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/AmeyaJain-25"><img src="https://avatars.githubusercontent.com/u/66305085?v=4" width="100px;" alt=""/><br /><sub><b>Ameya Jain</b></sub></a><br /><a href="https://github.com/AmeyaJain-25/" title="Code">💻</a> <a href="https://github.com/ashutosh1919/react-awesome-loaders/commits?author=ashutosh1919" title="Documentation">📖</a>
+  </tr>
+</table>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

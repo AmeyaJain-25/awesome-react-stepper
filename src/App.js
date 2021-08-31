@@ -22,7 +22,19 @@ const App = () => {
         justifyContent: "center",
       }}
     >
-      <MultiContainer containerStyle={{ width: "700px" }}>
+      <MultiContainer>
+            <MultiStepForm progressBar compStyle={{
+            background: "tomato",
+            padding: "10px",
+            margin: "5px",
+            borderRadius: "4px",
+          }}>
+                <div>Step 1</div>
+                <div>Step 2</div>
+                <div>Step 3</div>
+            </MultiStepForm>
+        </MultiContainer>
+      {/* <MultiContainer containerStyle={{ width: "700px" }}>
         <h1>hi</h1>
         <MultiStepForm
           progressBar
@@ -42,29 +54,15 @@ const App = () => {
           next={<button>Next</button>}
           submit={<button>Submit</button>}
           onFinalSubmit={finalSubmitCall}
-          actionPos="space-between"
+          actionPos="flex-end"
         >
           <div>Hello</div>
           <div>World</div>
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header>
-          {/* <div>Fine</div>
-        <div>Let's</div> */}
+          <div>Fine</div>
+        <div>Let's</div>
           <div>See</div>
         </MultiStepForm>
-      </MultiContainer>
+      </MultiContainer> */}
     </div>
   );
 };
