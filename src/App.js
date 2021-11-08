@@ -23,17 +23,20 @@ const App = () => {
       }}
     >
       <MultiContainer>
-            <MultiStepForm progressBar compStyle={{
-            background: "tomato",
+        <MultiStepForm
+          progressBar
+          compStyle={{
+            // background: "tomato",
             padding: "10px",
             margin: "5px",
             borderRadius: "4px",
-          }}>
-                <div>Step 1</div>
-                <div>Step 2</div>
-                <div>Step 3</div>
-            </MultiStepForm>
-        </MultiContainer>
+          }}
+        >
+          <div>Step 1</div>
+          <div>Step 2</div>
+          <div>Step 3</div>
+        </MultiStepForm>
+      </MultiContainer>
       {/* <MultiContainer containerStyle={{ width: "700px" }}>
         <h1>hi</h1>
         <MultiStepForm

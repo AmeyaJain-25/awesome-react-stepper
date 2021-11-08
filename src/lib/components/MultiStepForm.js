@@ -50,16 +50,16 @@ const MultiStepForm = (props) => {
           if (progressColor) {
             element.style.background = progressColor;
           } else {
-            element.style.background = "#4B81BD";
+            element.style.background = "#3A4047";
           }
           if (progressBorder) {
             element.style.border = progressBorder;
           } else {
-            element.style.border = "2px solid #1b589e";
+            element.style.border = "2px solid #f3f4f5";
           }
         } else {
           element.style.background = "#fff";
-          element.style.border = "2px solid #ACACA6";
+          element.style.border = "2px solid #3A4047";
         }
       }
     }
@@ -149,7 +149,7 @@ const MultiStepForm = (props) => {
           <div
             style={{
               display: "flex",
-              justifyContent: actionPos,
+              justifyContent: actionPos || "space-between",
               marginTop: "20px",
             }}
           >
