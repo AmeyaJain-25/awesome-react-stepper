@@ -22,11 +22,11 @@ const App = () => {
           <div>Step 3</div>
         </MultiStepForm>
       </MultiContainer>
-      {/* <MultiContainer containerStyle={{ width: "700px" }}>
+      {/* <MultiContainer contentBoxClassName="nice">
         <h1>hi</h1>
         <MultiStepForm
           showProgressBar
-          progressBarStyle={{ margin: "20px" }}
+          progressBarClassName="nice"
           contentStyle={{
             background: "tomato",
             padding: "20px",
@@ -37,8 +37,8 @@ const App = () => {
           strokeColor="gray"
           stroke={2}
           fillStroke={"red"}
-          progressColor="orange"
-          progressBorder="2px solid red"
+          activeColor="orange"
+          activeProgressBorder="2px solid red"
           backBtn={<button>Prev</button>}
           continueBtn={<button>Next</button>}
           submitBtn={<button>Submit</button>}

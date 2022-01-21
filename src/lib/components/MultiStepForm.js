@@ -4,14 +4,8 @@ import { useState } from "react";
 import localClasses from "../styles/multiStepForm.module.css";
 
 const MultiStepForm = (props) => {
-  const [active, setActive] = useState(0);
-
-  useEffect(() => {
-    progress(0);
-    setActive(1);
-  }, []);
-
   const {
+    defaultActiveStep = 1,
     children = <div></div>,
     showProgressBar = true,
     backBtn,
@@ -25,11 +19,23 @@ const MultiStepForm = (props) => {
     strokeColor = "#cdd3d8",
     fillStroke = "#3a4047",
     stroke = 2,
-    progressColor = "#3A4047",
-    progressBorder = "2px solid #f3f4f5",
-    progressBarStyle,
-    contentStyle,
+    activeColor = "#3A4047",
+    activeProgressBorder = "2px solid #f3f4f5",
+    progressBarClassName,
+    contentBoxClassName,
   } = props;
+
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    if (defaultActiveStep <= children.length && defaultActiveStep > 0) {
+      progress(defaultActiveStep - 1);
+      setActive(defaultActiveStep);
+    } else {
+      progress(0);
+      setActive(1);
+    }
+  }, []);
 
   useEffect(() => {
     if (children.length > 1 && showProgressBar) {
@@ -42,8 +48,8 @@ const MultiStepForm = (props) => {
       children.map((children, ind) => {
         const element = document.getElementById(`input_${ind}`);
         if (element.classList.length > 1) {
-          element.style.background = progressColor;
-          element.style.border = progressBorder;
+          element.style.background = activeColor;
+          element.style.border = activeProgressBorder;
         } else {
           element.style.background = "#fff";
           element.style.border = "2px solid #3A4047";
@@ -103,7 +109,9 @@ const MultiStepForm = (props) => {
   return (
     <div>
       {children.length > 1 && showProgressBar && (
-        <div className={localClasses.progressBarDiv} style={progressBarStyle}>
+        <div
+          className={`${localClasses.progressBarDiv} ${progressBarClassName}`}
+        >
           <div className={localClasses.container}>
             <div
               className={localClasses.progress}
@@ -130,7 +138,7 @@ const MultiStepForm = (props) => {
         </div>
       )}
 
-      <div style={contentStyle}>
+      <div className={contentBoxClassName}>
         {children.length > 1
           ? children.map((child, index) => {
               return active === index + 1 && child;
