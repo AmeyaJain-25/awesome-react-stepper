@@ -1,18 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
 import MultiStepForm from "./lib/components/MultiStepForm";
 import MultiContainer from "./lib/components/MultiContainer";
-import prev from "./lib/assets/prev.png";
-import next from "./lib/assets/next.png";
 
 // previous={<img src={prev} width="60" height="60"/>} next={<img src={next} width="60" height="60"/>}
 // previous={<button>Prev</button>} next={<button>Next</button>}
 
 const App = () => {
-  const finalSubmitCall = () => {
-    console.log("Finally SUBMITTED");
-  };
-
   return (
     <div
       className="App"
@@ -23,15 +16,7 @@ const App = () => {
       }}
     >
       <MultiContainer>
-        <MultiStepForm
-          progressBar
-          compStyle={{
-            // background: "tomato",
-            padding: "10px",
-            margin: "5px",
-            borderRadius: "4px",
-          }}
-        >
+        <MultiStepForm>
           <div>Step 1</div>
           <div>Step 2</div>
           <div>Step 3</div>
@@ -40,24 +25,27 @@ const App = () => {
       {/* <MultiContainer containerStyle={{ width: "700px" }}>
         <h1>hi</h1>
         <MultiStepForm
-          progressBar
-          progressStyle={{ margin: "20px" }}
-          compStyle={{
+          showProgressBar
+          progressBarStyle={{ margin: "20px" }}
+          contentStyle={{
             background: "tomato",
             padding: "20px",
             borderRadius: "4px",
             border: "1px solid black",
           }}
           barWidth="40vw"
-          barColor="gray"
-          barStroke={2}
+          strokeColor="gray"
+          stroke={2}
+          fillStroke={"red"}
           progressColor="orange"
           progressBorder="2px solid red"
-          previous={<button>Prev</button>}
-          next={<button>Next</button>}
-          submit={<button>Submit</button>}
-          onFinalSubmit={finalSubmitCall}
-          actionPos="flex-end"
+          backBtn={<button>Prev</button>}
+          continueBtn={<button>Next</button>}
+          submitBtn={<button>Submit</button>}
+          onSubmit={finalSubmitCall}
+          btnPos="flex-end"
+          onContinue = () => {},
+          onPrev = () => {},
         >
           <div>Hello</div>
           <div>World</div>

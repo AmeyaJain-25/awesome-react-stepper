@@ -12,56 +12,43 @@ const MultiStepForm = (props) => {
   }, []);
 
   const {
-    children,
-    progressBar,
-    previous,
-    next,
-    submit,
-    onFinalSubmit,
-    actionPos,
-    barWidth,
-    barColor,
-    barStroke,
-    progressColor,
-    progressBorder,
-    progressStyle,
-    compStyle,
+    children = <div></div>,
+    showProgressBar = true,
+    backBtn,
+    continueBtn,
+    submitBtn,
+    onContinue = () => {},
+    onPrev = () => {},
+    onSubmit = () => {},
+    btnPos = "space-between",
+    barWidth = "200px",
+    strokeColor = "#cdd3d8",
+    fillStroke = "#3a4047",
+    stroke = 2,
+    progressColor = "#3A4047",
+    progressBorder = "2px solid #f3f4f5",
+    progressBarStyle,
+    contentStyle,
   } = props;
 
   useEffect(() => {
-    if (progressBar) {
+    if (children.length > 1 && showProgressBar) {
       //Progress Bar Width
-      if (barWidth) {
-        document.getElementsByClassName(localClasses.steps)[0].style.width =
-          barWidth;
-      }
-
-      //Progress Line
-      if (progressBorder) {
-        document.getElementsByClassName(
-          localClasses.percent
-        )[0].style.borderBottom = `${progressBorder}`;
-      }
+      document.getElementsByClassName(localClasses.steps)[0].style.width =
+        barWidth;
 
       //Progress Circle Border & Background Color
-      for (let index = 0; index < children.length; index++) {
-        const element = document.getElementById(`input_${index}`);
+      console.log(children);
+      children.map((children, ind) => {
+        const element = document.getElementById(`input_${ind}`);
         if (element.classList.length > 1) {
-          if (progressColor) {
-            element.style.background = progressColor;
-          } else {
-            element.style.background = "#3A4047";
-          }
-          if (progressBorder) {
-            element.style.border = progressBorder;
-          } else {
-            element.style.border = "2px solid #f3f4f5";
-          }
+          element.style.background = progressColor;
+          element.style.border = progressBorder;
         } else {
           element.style.background = "#fff";
           element.style.border = "2px solid #3A4047";
         }
-      }
+      });
     }
   }, [active]);
 
@@ -71,6 +58,7 @@ const MultiStepForm = (props) => {
     }
     progress(active - 2);
     setActive((prev) => prev - 1);
+    onPrev();
   };
 
   const nextStep = () => {
@@ -79,6 +67,7 @@ const MultiStepForm = (props) => {
     }
     progress(active);
     setActive((prev) => prev + 1);
+    onContinue();
   };
 
   const progressClick = (ind) => {
@@ -87,14 +76,14 @@ const MultiStepForm = (props) => {
   };
 
   const progress = (stepNum) => {
-    if (children.length > 1 && progressBar) {
+    if (children.length > 1 && showProgressBar) {
       let p = (stepNum / (children.length - 1)) * 100;
       document.getElementsByClassName(
         localClasses.percent
       )[0].style.width = `${p}%`;
     }
 
-    if (children.length > 1 && progressBar) {
+    if (children.length > 1 && showProgressBar) {
       for (let index = 0; index < children.length; index++) {
         const e = document.getElementById(`input_${index}`);
         if (e.id.split("_")[1] === stepNum) {
@@ -113,14 +102,17 @@ const MultiStepForm = (props) => {
 
   return (
     <div>
-      {children.length > 1 && progressBar && (
-        <div className={localClasses.progressBarDiv} style={progressStyle}>
+      {children.length > 1 && showProgressBar && (
+        <div className={localClasses.progressBarDiv} style={progressBarStyle}>
           <div className={localClasses.container}>
             <div
               className={localClasses.progress}
-              style={{ borderBottom: `${barStroke}px solid ${barColor}` }}
+              style={{ borderBottom: `${stroke}px solid ${strokeColor}` }}
             >
-              <div className={localClasses.percent}></div>
+              <div
+                className={localClasses.percent}
+                style={{ borderBottom: `${stroke}px solid ${fillStroke}` }}
+              ></div>
             </div>
             <div className={localClasses.steps}>
               {children.map((chl, ind) => {
@@ -138,53 +130,56 @@ const MultiStepForm = (props) => {
         </div>
       )}
 
-      <div style={compStyle}>
+      <div style={contentStyle}>
         {children.length > 1
           ? children.map((child, index) => {
               return active === index + 1 && child;
             })
           : children}
 
-        {children.length > 1 && (
-          <div
-            style={{
-              display: "flex",
-              justifyContent: actionPos || "space-between",
-              marginTop: "20px",
-            }}
-          >
-            {active > 1 ? (
-              previous ? (
-                <span
-                  onClick={() => previousStep()}
-                  style={{ marginRight: "20px" }}
-                >
-                  {previous}
-                </span>
-              ) : (
-                <button
-                  onClick={() => previousStep()}
-                  style={{ marginRight: "20px" }}
-                >
-                  Prev
-                </button>
-              )
+        <div
+          style={{
+            display: "flex",
+            justifyContent: btnPos,
+            marginTop: "20px",
+          }}
+        >
+          {active > 1 ? (
+            backBtn ? (
+              <span onClick={previousStep} style={{ marginRight: "20px" }}>
+                {backBtn}
+              </span>
             ) : (
-              <span></span>
-            )}
-            {active < children.length ? (
-              next ? (
-                <span onClick={() => nextStep()}>{next}</span>
-              ) : (
-                <button onClick={() => nextStep()}>Next</button>
-              )
-            ) : submit ? (
-              <span onClick={() => onFinalSubmit()}>{submit}</span>
+              <button
+                className={localClasses.defaultBtn}
+                onClick={previousStep}
+                style={{ marginRight: "20px" }}
+              >
+                Go Back
+              </button>
+            )
+          ) : (
+            <span></span>
+          )}
+          {active < children.length ? (
+            continueBtn ? (
+              <span onClick={() => nextStep()}>{continueBtn}</span>
             ) : (
-              <button>Submit</button>
-            )}
-          </div>
-        )}
+              <button
+                className={localClasses.defaultBtn}
+                onClick={() => nextStep()}
+              >
+                Continue
+              </button>
+            )
+          ) : submitBtn ? (
+            <span onClick={onSubmit}>{submitBtn}</span>
+          ) : (
+            <button className={localClasses.defaultBtn} onClick={onSubmit}>
+              Submit
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
-import React from 'react'
-import localClasses from "../styles/multiContainer.module.css"
+import React from "react";
+import localClasses from "../styles/multiContainer.module.css";
 
-const MultiContainer = (props) => {
-    return (
-        <div className={localClasses.mainContainer} style={props.containerStyle}>
-            {props.children}
-        </div>
-    )
-}
+const MultiContainer = ({ containerStyle, children }) => {
+  return (
+    <div className={localClasses.mainContainer} style={containerStyle}>
+      {children}
+    </div>
+  );
+};
 
 export default MultiContainer;
