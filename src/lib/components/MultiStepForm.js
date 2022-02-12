@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import localClasses from "../styles/multiStepForm.module.css";
+import "../styles/multiStepForm.css";
 
 const MultiStepForm = (props) => {
   const {
@@ -23,6 +23,7 @@ const MultiStepForm = (props) => {
     activeProgressBorder = "2px solid #f3f4f5",
     progressBarClassName,
     contentBoxClassName,
+    allowClickControl = true,
   } = props;
 
   const [active, setActive] = useState(0);
@@ -40,8 +41,7 @@ const MultiStepForm = (props) => {
   useEffect(() => {
     if (children.length > 1 && showProgressBar) {
       //Progress Bar Width
-      document.getElementsByClassName(localClasses.steps)[0].style.width =
-        barWidth;
+      document.getElementsByClassName("steps")[0].style.width = barWidth;
 
       //Progress Circle Border & Background Color
       console.log(children);
@@ -77,6 +77,7 @@ const MultiStepForm = (props) => {
   };
 
   const progressClick = (ind) => {
+    if (!allowClickControl) return;
     setActive(ind + 1);
     progress(ind);
   };
@@ -84,23 +85,21 @@ const MultiStepForm = (props) => {
   const progress = (stepNum) => {
     if (children.length > 1 && showProgressBar) {
       let p = (stepNum / (children.length - 1)) * 100;
-      document.getElementsByClassName(
-        localClasses.percent
-      )[0].style.width = `${p}%`;
+      document.getElementsByClassName("percent")[0].style.width = `${p}%`;
     }
 
     if (children.length > 1 && showProgressBar) {
       for (let index = 0; index < children.length; index++) {
         const e = document.getElementById(`input_${index}`);
         if (e.id.split("_")[1] === stepNum) {
-          e.classList.add(localClasses.selected);
-          e.classList.remove(localClasses.completed);
+          e.classList.add("selected");
+          e.classList.remove("completed");
         }
         if (e.id.split("_")[1] <= stepNum) {
-          e.classList.add(localClasses.completed);
+          e.classList.add("completed");
         }
         if (e.id.split("_")[1] > stepNum) {
-          e.classList.remove(localClasses.selected, localClasses.completed);
+          e.classList.remove("selected", "completed");
         }
       }
     }
@@ -109,25 +108,23 @@ const MultiStepForm = (props) => {
   return (
     <div>
       {children.length > 1 && showProgressBar && (
-        <div
-          className={`${localClasses.progressBarDiv} ${progressBarClassName}`}
-        >
-          <div className={localClasses.container}>
+        <div className={`${"progressBarDiv"} ${progressBarClassName}`}>
+          <div className={"container"}>
             <div
-              className={localClasses.progress}
+              className={"progress"}
               style={{ borderBottom: `${stroke}px solid ${strokeColor}` }}
             >
               <div
-                className={localClasses.percent}
+                className={"percent"}
                 style={{ borderBottom: `${stroke}px solid ${fillStroke}` }}
               ></div>
             </div>
-            <div className={localClasses.steps}>
+            <div className={"steps"}>
               {children.map((chl, ind) => {
                 return (
                   <div
                     key={ind}
-                    className={localClasses.step}
+                    className={"step"}
                     id={`input_${ind}`}
                     onClick={() => progressClick(ind)}
                   ></div>
@@ -159,7 +156,7 @@ const MultiStepForm = (props) => {
               </span>
             ) : (
               <button
-                className={localClasses.defaultBtn}
+                className={"defaultBtn"}
                 onClick={previousStep}
                 style={{ marginRight: "20px" }}
               >
@@ -173,17 +170,14 @@ const MultiStepForm = (props) => {
             continueBtn ? (
               <span onClick={() => nextStep()}>{continueBtn}</span>
             ) : (
-              <button
-                className={localClasses.defaultBtn}
-                onClick={() => nextStep()}
-              >
+              <button className={"defaultBtn"} onClick={() => nextStep()}>
                 Continue
               </button>
             )
           ) : submitBtn ? (
             <span onClick={onSubmit}>{submitBtn}</span>
           ) : (
-            <button className={localClasses.defaultBtn} onClick={onSubmit}>
+            <button className={"defaultBtn"} onClick={onSubmit}>
               Submit
             </button>
           )}

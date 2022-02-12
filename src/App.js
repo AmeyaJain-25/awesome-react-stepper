@@ -1,6 +1,5 @@
 import "./App.css";
-import MultiStepForm from "./lib/components/MultiStepForm";
-import MultiContainer from "./lib/components/MultiContainer";
+import { MultiContainer, MultiStepForm } from "./lib";
 
 // previous={<img src={prev} width="60" height="60"/>} next={<img src={next} width="60" height="60"/>}
 // previous={<button>Prev</button>} next={<button>Next</button>}
@@ -44,8 +43,8 @@ const App = () => {
           submitBtn={<button>Submit</button>}
           onSubmit={finalSubmitCall}
           btnPos="flex-end"
-          onContinue = () => {},
-          onPrev = () => {},
+          onContinue={() => {}}
+          onPrev={() => {}}
         >
           <div>Hello</div>
           <div>World</div>
