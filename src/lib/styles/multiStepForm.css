@@ -1,3 +1,7 @@
+.stepFormDiv {
+  z-index: 3;
+}
+
 .progressBarDiv {
   display: flex;
   justify-content: center;
@@ -10,6 +14,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  z-index: 9;
 }
 .step {
   width: 20px;
@@ -29,13 +34,14 @@
   position: absolute;
   width: 100%;
   height: 50%;
-  z-index: -1;
+  z-index: 3;
+  transition: background 1s;
 }
 .percent {
   position: absolute;
   width: 0;
   height: 100%;
-  z-index: 1;
+  z-index: -1;
   transition: width 1s;
 }
 .defaultBtn {

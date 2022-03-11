@@ -106,7 +106,7 @@ const MultiStepForm = (props) => {
   };
 
   return (
-    <div>
+    <div className={"stepFormDiv"}>
       {children.length > 1 && showProgressBar && (
         <div className={`${"progressBarDiv"} ${progressBarClassName}`}>
           <div className={"container"}>

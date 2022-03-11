@@ -1,9 +1,9 @@
 import React from "react";
-import localClasses from "../styles/multiContainer.module.css";
+import "../styles/multiContainer.css";
 
 const MultiContainer = ({ containerStyle, children }) => {
   return (
-    <div className={localClasses.mainContainer} style={containerStyle}>
+    <div className="mainContainer" style={containerStyle}>
       {children}
     </div>
   );
