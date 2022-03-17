@@ -1,3 +1,4 @@
+<!-- Logo -->
 <p align="center"> 
     <img src="./doc/images/logo-manifest.png" align="center" height="150"></img>
 </p>
