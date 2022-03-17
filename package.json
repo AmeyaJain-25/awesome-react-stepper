@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "build": "babel lib --out-dir dist --copy-files"
+    "build": "babel src/lib --out-dir dist --copy-files"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,10 @@
     "react": ">=16"
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "react-dom": "^17.0.2"
   },
   "dependencies": {}
