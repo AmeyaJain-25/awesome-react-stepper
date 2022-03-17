@@ -2,8 +2,8 @@
     <img src="./doc/images/logo-manifest.png" align="center" height="150"></img>
 </p>
 
-<h1 align="center">React Multi Step Form</h1> 
-<h3 align="center"> A Multi Step form with completely customisable,</br>  controlled and responsive 🚀 </h3>
+<h1 align="center">React Multi Stepper</h1> 
+<h3 align="center"> Highly Customizable Multi Stepper Component for React 🚀 </h3>
 
 <p align="center">
   <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fashutosh1919%2Freact-awesome-loaders&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
@@ -51,7 +51,7 @@ function MultiStepFormComponent(props) {
         ...
         <MultiContainer>
             <MultiStepForm
-                progressBar 
+                progressBar
                 compStyle={styles}>
                 <div>Step 1</div>
                 <div>Step 2</div>
@@ -63,12 +63,13 @@ function MultiStepFormComponent(props) {
 }
 export default MultiStepFormComponent
 ```
+
 <p align="center"> 
     <img src="./src/images/defaultForm.png" align="center" height="150"></img>
 </p>
 
 The Multi Step Form is easy to import in any component.
-The Form is responsive, totally customizable and with many features to change according to the user.   
+The Form is responsive, totally customizable and with many features to change according to the user.  
 You can provide a fixed width too for the form.
 Read the complete in detail documentation on the [project website]().
 
@@ -97,6 +98,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/AmeyaJain-25"><img src="https://avatars.githubusercontent.com/u/66305085?v=4" width="100px;" alt=""/><br /><sub><b>Ameya Jain</b></sub></a><br /><a href="https://github.com/AmeyaJain-25/" title="Code">💻</a> <a href="https://github.com/ashutosh1919/react-awesome-loaders/commits?author=ashutosh1919" title="Documentation">📖</a>
   </tr>
 </table>
-
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
