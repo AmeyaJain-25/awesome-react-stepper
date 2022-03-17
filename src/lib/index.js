@@ -1,4 +1,3 @@
-import MultiContainer from "./components/MultiContainer";
-import MultiStepForm from "./components/MultiStepForm";
+import MultiStepper from "./components/MultiStepper";
 
-export { MultiContainer, MultiStepForm };
+export { MultiStepper };

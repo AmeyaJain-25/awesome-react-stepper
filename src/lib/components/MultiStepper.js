@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import "../styles/multiStepForm.css";
+import "../styles/multiStepper.css";
 
-const MultiStepForm = (props) => {
+const MultiStepper = (props) => {
   const {
     children = <div></div>,
     showProgressBar = true,
@@ -21,8 +21,8 @@ const MultiStepForm = (props) => {
     stroke = 2,
     activeColor = "#3A4047",
     activeProgressBorder = "2px solid #f3f4f5",
-    progressBarClassName,
-    contentBoxClassName,
+    progressBarClassName = "",
+    contentBoxClassName = "",
     allowClickControl = true,
   } = props;
 
@@ -106,7 +106,7 @@ const MultiStepForm = (props) => {
   };
 
   return (
-    <div className={"stepFormDiv"}>
+    <div className={"multiStepperDiv"}>
       {children.length > 1 && showProgressBar && (
         <div className={`${"progressBarDiv"} ${progressBarClassName}`}>
           <div className={"container"}>
@@ -187,4 +187,4 @@ const MultiStepForm = (props) => {
   );
 };
 
-export default MultiStepForm;
+export default MultiStepper;
