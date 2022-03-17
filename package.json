@@ -2,18 +2,16 @@
   "name": "react-multi-stepper",
   "version": "1.0.0",
   "description": "Highly Customizable Multi Stepper Component for React",
-  "main": "lib/index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel lib --out-dir dist --copy-files"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AmeyaJain-25/React-Multi-Step-Form.git"
   },
-  "author": "Ameya Jain",
+  "author": "AmeyaJain-25",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AmeyaJain-25/React-Multi-Step-Form/issues"

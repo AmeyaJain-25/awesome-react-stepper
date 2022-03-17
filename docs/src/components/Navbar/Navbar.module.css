@@ -1,0 +1,47 @@
+.navbarComponent {
+  box-shadow: 5px 20px 20px rgba(23, 37, 57, 0.15);
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  background: #172539;
+}
+
+.mainNavbar {
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  background: #172539;
+  margin: 0 auto;
+  padding: 0em 0.7em;
+}
+
+.mainNavbar h1 {
+  font-family: "Recursive", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  color: #63b38f;
+}
+
+.mainNavbar a {
+  color: #63b38f;
+  list-style: none;
+  text-decoration: none;
+}
+
+.rightPanel {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.8em;
+  color: #63b38f;
+}
+.rightPanel a {
+  display: flex;
+  align-items: center;
+  color: #63b38f;
+  list-style: none;
+  text-decoration: none;
+}

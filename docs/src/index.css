@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Recursive&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Comfortaa", cursive, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #63b38f;
+  color: #172539;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

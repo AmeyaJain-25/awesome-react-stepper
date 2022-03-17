@@ -1,0 +1,15 @@
+.footerComponent {
+  box-shadow: 5px 20px 20px rgba(23, 37, 57, 0.15);
+  z-index: 999;
+  background: #172539;
+  margin-top: 1.4em;
+}
+
+.developedText {
+  font-size: 1.3em;
+  font-family: "Recursive", sans-serif;
+  color: #63b38f;
+  text-align: center;
+  margin: 0em;
+  padding: 0.7em 0em;
+}

@@ -1,0 +1,44 @@
+.introComponentParent {
+  background: #172539;
+}
+.introComponent {
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0%;
+}
+
+.headingSubtitle {
+  padding: 0% 30%;
+  font-size: 2.8em;
+  font-family: "Recursive", sans-serif;
+  color: #63b38f;
+  text-align: center;
+}
+
+.buttonsDiv {
+  margin-top: 1.4em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.4em;
+}
+
+.introBtn {
+  cursor: pointer;
+  box-shadow: none;
+  width: 10.1em;
+  height: 42px;
+  border-radius: 50px;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: "Recursive", sans-serif;
+  background: #e4e4e4;
+  color: #172539;
+  border: none;
+}

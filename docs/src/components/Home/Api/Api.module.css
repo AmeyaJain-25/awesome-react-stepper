@@ -1,0 +1,38 @@
+.contentTitle {
+  margin-bottom: 0em;
+  font-size: 1.2em;
+}
+
+.contentDesc {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.apiTable {
+  width: 100%;
+  font-family: "Recursive", sans-serif;
+  font-size: 1em;
+  background: #292c31;
+  border-radius: 8px;
+  color: #63b38f;
+  padding: 0.7em;
+}
+
+.apiTable thead tr th {
+  padding: 0.5em;
+  font-size: 1.1em;
+  color: #93b3a4;
+}
+
+.apiTable tbody tr td {
+  padding: 0.7em 0.5em;
+  font-size: 1em;
+  font-weight: 200;
+}
+
+/* .apiTable tbody tr td:nth-child(3) code {
+  border-radius: 4px;
+  background: #9fa7a3;
+  color: #172539;
+  padding: 0px 2px;
+} */

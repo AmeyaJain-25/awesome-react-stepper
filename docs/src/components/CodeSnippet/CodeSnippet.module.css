@@ -1,0 +1,17 @@
+.codeSnippetComponent {
+  border-radius: 6px;
+  background: #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.4em;
+  padding: 0.7em;
+}
+
+.codeSnippet {
+  font-size: 1em;
+  color: #080f1a;
+  white-space: pre-line;
+}
+
+/* .copyCode {
+} */
