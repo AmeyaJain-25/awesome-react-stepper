@@ -15,7 +15,7 @@ const MultiStepper = (props) => {
     onPrev = () => {},
     onSubmit = () => {},
     btnPos = "space-between",
-    barWidth = "200px",
+    barWidth = "",
     strokeColor = "#cdd3d8",
     fillStroke = "#3a4047",
     stroke = 2,
@@ -40,11 +40,7 @@ const MultiStepper = (props) => {
 
   useEffect(() => {
     if (children.length > 1 && showProgressBar) {
-      //Progress Bar Width
-      document.getElementsByClassName("steps")[0].style.width = barWidth;
-
       //Progress Circle Border & Background Color
-      console.log(children);
       children.map((children, ind) => {
         const element = document.getElementById(`input_${ind}`);
         if (element.classList.length > 1) {
@@ -109,7 +105,7 @@ const MultiStepper = (props) => {
     <div className={"multiStepperDiv"}>
       {children.length > 1 && showProgressBar && (
         <div className={`${"progressBarDiv"} ${progressBarClassName}`}>
-          <div className={"container"}>
+          <div className={"progressBarContainer"} style={{ width: barWidth }}>
             <div
               className={"progress"}
               style={{ borderBottom: `${stroke}px solid ${strokeColor}` }}

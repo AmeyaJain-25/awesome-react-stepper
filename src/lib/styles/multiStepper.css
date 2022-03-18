@@ -1,56 +1,57 @@
-.multiStepperDiv {
+.multiStepperDiv .multiStepperDiv {
   z-index: 3;
 }
 
-.progressBarDiv {
+.multiStepperDiv .progressBarDiv {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container {
+.multiStepperDiv .progressBarContainer {
   position: relative;
+  width: 100%;
 }
-.steps {
+.multiStepperDiv .steps {
   position: relative;
   display: flex;
   justify-content: space-between;
   z-index: 9;
 }
-.step {
+.multiStepperDiv .step {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   cursor: pointer;
   transition: background 1s;
 }
-.step.selected {
+.multiStepperDiv .step.selected {
   border: 2px solid #3a4047;
 }
-.step.completed {
+.multiStepperDiv .step.completed {
   border: 2px solid #f3f4f5;
   background: #3a4047;
 }
-.progress {
+.multiStepperDiv .progress {
   position: absolute;
   width: 100%;
   height: 50%;
   z-index: 3;
   transition: background 1s;
 }
-.percent {
+.multiStepperDiv .percent {
   position: absolute;
   width: 0;
   height: 100%;
   z-index: -1;
   transition: width 1s;
 }
-.defaultBtn {
+.multiStepperDiv .defaultBtn {
   background: #3a4047;
   color: #f3f4f5;
   cursor: pointer;
   outline: 0;
   box-shadow: none;
-  padding: 0.4em 1em;
+  padding: 0multistepperdiv 0.4em 1em;
   border: none;
   border-radius: 45px;
 }
