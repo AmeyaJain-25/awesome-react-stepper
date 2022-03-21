@@ -11,7 +11,6 @@ function Demo() {
     >
       <div>Hi</div>
       <div>Hi</div>
-      <div>Hi</div>
     </MultiStepper>
   );
 }
