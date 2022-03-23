@@ -13,5 +13,7 @@
   white-space: pre-line;
 }
 
-/* .copyCode {
-} */
+.copyCode {
+  display: inline-block;
+  cursor: pointer;
+}
