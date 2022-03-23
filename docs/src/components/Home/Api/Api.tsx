@@ -1,6 +1,6 @@
-import { apiData } from "../../../utils/apiData";
 import Section from "../../Section";
 import apiCss from "./Api.module.css";
+import { apiData } from "../../../utils/apiData";
 
 const Api = () => {
   return (

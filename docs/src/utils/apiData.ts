@@ -1,4 +1,4 @@
-export const apiData = [
+export const apiData: any[] = [
   {
     key: 1,
     property: "showProgressBar",
