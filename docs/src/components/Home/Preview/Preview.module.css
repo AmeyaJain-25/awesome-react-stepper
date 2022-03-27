@@ -1,0 +1,39 @@
+.previewDiv .stepperSubDiv {
+  margin: 1.4em;
+  background: #172539;
+  border-radius: 12px;
+  padding: 1.4em;
+  color: #63b38f;
+}
+
+.previewDiv .stepperSubDiv h1 {
+  font-weight: 500;
+  text-align: center;
+  color: #70cea2;
+}
+
+.previewDiv .stepperSubDiv h2 {
+  font-weight: 400;
+  text-align: center;
+  color: #70cea2;
+}
+
+.previewDiv .stepperSubDiv li {
+  color: #70cea2;
+  font-size: 1.2em;
+  margin: 0.4em 0em;
+}
+
+.stepperBtn {
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background: #172539;
+  color: #63b38f;
+  border-radius: 12px;
+  padding: 0.5em 1.4em;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 1.4em;
+}

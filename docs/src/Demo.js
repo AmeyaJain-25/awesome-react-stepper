@@ -5,10 +5,12 @@ function Demo() {
   return (
     <MultiStepper
       barWidth="200px"
-      fillStroke="red"
-      submitBtn={<button onClick={() => alert("Hi")}>Send</button>}
+      // fillStroke="red"
       onSubmit={() => alert("Submitted")}
     >
+      <div>Hi</div>
+      <div>Hi</div>
+      <div>Hi</div>
       <div>Hi</div>
       <div>Hi</div>
     </MultiStepper>

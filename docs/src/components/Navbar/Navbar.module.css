@@ -16,7 +16,6 @@
   align-self: center;
   background: #172539;
   margin: 0 auto;
-  padding: 0em 0.7em;
 }
 
 .mainNavbar h1 {
@@ -30,6 +29,7 @@
   color: #63b38f;
   list-style: none;
   text-decoration: none;
+  margin-left: 0.7em;
 }
 
 .rightPanel {
@@ -37,7 +37,9 @@
   justify-content: flex-end;
   gap: 2.8em;
   color: #63b38f;
+  margin-right: 0.7em;
 }
+
 .rightPanel a {
   display: flex;
   align-items: center;
