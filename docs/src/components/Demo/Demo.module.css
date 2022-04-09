@@ -1,0 +1,38 @@
+.demoParentDiv {
+  max-width: 800px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.demoDiv {
+  padding: 1.4em 15%;
+}
+
+.demoDiv .stepperSubDiv {
+  margin: 1.4em;
+  background: #172539;
+  border-radius: 12px;
+  padding: 1.4em;
+  color: #63b38f;
+}
+
+.demoDiv .stepperSubDiv h1 {
+  font-weight: 500;
+  text-align: center;
+  color: #70cea2;
+}
+
+.stepperBtn {
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background: #172539;
+  color: #63b38f;
+  border-radius: 12px;
+  padding: 0.5em 1.4em;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 1.4em;
+}
