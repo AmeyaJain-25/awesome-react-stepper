@@ -1,3 +1,4 @@
+import CodeBox from "../../CodeBox";
 import CodeSnippet from "../../CodeSnippet";
 import Section from "../../Section";
 import quickStartCss from "./QuickStart.module.css";
@@ -11,7 +12,20 @@ const QuickStart = () => {
         Stepper. The progressBar can be hidden by setting the showProgressBar
         prop to false.
       </p>
-      <CodeSnippet
+      <CodeBox
+        code={`<MultiStepper>
+  <div className="stepperSubDiv">
+    <h1>Welcome to React Multi Stepper</h1>
+  </div>
+  <div className="stepperSubDiv">
+    <h1>Add your content here!!!</h1>
+  </div>
+  <div className="stepperSubDiv">
+    <h1>Thank you for using React Multi Stepper</h1>
+  </div>
+</MultiStepper>`}
+      />
+      {/* <CodeSnippet
         code={`
 import MultiStepForm from "react-multi-step-form";
 
@@ -20,7 +34,7 @@ import MultiStepForm from "react-multi-step-form";
             <div>Step 2</div>
             <div>Step 3</div>
           </MultiStepForm>`}
-      />
+      /> */}
     </Section>
   );
 };

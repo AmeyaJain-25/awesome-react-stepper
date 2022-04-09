@@ -1,0 +1,10 @@
+.codeSnippetComponent {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.4em;
+}
+
+.copyCode {
+  display: inline-block;
+  cursor: pointer;
+}
