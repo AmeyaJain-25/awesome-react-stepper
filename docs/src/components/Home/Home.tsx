@@ -12,6 +12,7 @@ const Home = () => {
       <Introduction />
       <Preview />
       <Overview />
+      <div id="getStarted" />
       <Installation />
       <QuickStart />
       <Api />
