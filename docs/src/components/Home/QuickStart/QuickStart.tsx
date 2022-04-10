@@ -20,13 +20,13 @@ const QuickStart = () => {
         code={`import { MultiStepper } from "react-multi-stepper";
 
 <MultiStepper>
-  <div className="stepperSubDiv">
+  <div>
     <h1>Welcome to React Multi Stepper</h1>
   </div>
-  <div className="stepperSubDiv">
+  <div>
     <h1>Add your content here!!!</h1>
   </div>
-  <div className="stepperSubDiv">
+  <div>
     <h1>Thank you for using React Multi Stepper</h1>
   </div>
 </MultiStepper>
