@@ -1,7 +1,7 @@
 import React from "react";
 import demoCss from "./Demo.module.css";
 import { MultiStepper } from "react-multi-stepper";
-import SyntaxHighlighter from "react-syntax-highlighter";
+import CodeSnippet from "../CodeSnippet";
 
 function Demo() {
   return (
@@ -28,8 +28,8 @@ function Demo() {
           </div>
         </MultiStepper>
       </div>
-      <SyntaxHighlighter language="javascript">
-        {`<MultiStepper
+      <CodeSnippet
+        code={`<MultiStepper
   onSubmit={() => alert("Thank you for using React Multi Stepper!!!")}
   submitBtn={<button className="stepperBtn">Submit</button>}
   continueBtn={<button className="stepperBtn">Next</button>}
@@ -49,7 +49,7 @@ function Demo() {
     <h1>Thank you for using React Multi Stepper</h1>
   </div>
 </MultiStepper>`}
-      </SyntaxHighlighter>
+      />
     </div>
   );
 }

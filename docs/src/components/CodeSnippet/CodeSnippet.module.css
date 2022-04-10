@@ -10,7 +10,7 @@
 .codeSnippet {
   font-size: 1em;
   color: #080f1a;
-  white-space: pre-line;
+  white-space: pre-wrap;
 }
 
 .copyCode {
