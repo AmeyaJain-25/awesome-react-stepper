@@ -3,13 +3,39 @@
   z-index: 999;
   background: #172539;
   margin-top: 1.4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em 1.4em;
 }
 
 .developedText {
+  font-weight: 400;
   font-size: 1.3em;
   font-family: "Recursive", sans-serif;
   color: #8fffcc;
   text-align: center;
   margin: 0em;
   padding: 0.7em 0em;
+}
+
+.developedText a {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #8fffcc;
+}
+
+.footerComponent iframe {
+  padding: 0.7em 0em;
+  border: none;
+  margin-left: 2.1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .footerComponent {
+    padding: 0em 0em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
