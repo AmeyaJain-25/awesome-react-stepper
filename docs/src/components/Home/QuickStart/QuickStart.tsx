@@ -7,9 +7,14 @@ const QuickStart = () => {
     <Section title="QuickStart">
       <h4 className={quickStartCss.contentTitle}>Import And Use</h4>
       <p className={quickStartCss.contentDesc}>
-        The children of MultiStepForm will be counted as each step of the
-        Stepper. The progressBar can be hidden by setting the showProgressBar
-        prop to false.
+        Multi Stepper takes each{" "}
+        <span className={quickStartCss.highlight}>children</span> as a{" "}
+        <span className={quickStartCss.highlight}>step</span>. Number of
+        children inside the Multi Stepper will be the number of steps and can be
+        shown with the progress bar. Also, the progress bar can be hidden by
+        setting the{" "}
+        <code className={quickStartCss.highlight}>showProgressBar</code>{" "}
+        attribute to <code className={quickStartCss.highlight}>false</code>.
       </p>
       <CodeSnippet
         code={`import { MultiStepper } from "react-multi-stepper";

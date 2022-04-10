@@ -5,13 +5,13 @@ import { apiData } from "../../../utils/apiData";
 const Api = () => {
   return (
     <Section title="API">
-      <h4 className={apiCss.contentTitle}>Stepper</h4>
+      <h4 className={apiCss.contentTitle}>Multi Stepper</h4>
       <p className={apiCss.contentDesc}>
-        <code>Stepper</code> is a component that renders a component containing
-        a progress bar with the current active step and the total number of
-        steps followed by the component of current active step provided. The
-        order of steps will be as same as the order of children in{" "}
-        <code>Stepper</code>.
+        <code>MultiStepper</code> is a component that renders a component
+        containing a progress bar highlighting the current active step. Below
+        the progress bar the active step component is rendered. The order of
+        steps will be as same as the order of children in{" "}
+        <code>MultiStepper</code>.
       </p>
       <table className={apiCss.apiTable}>
         <thead>
