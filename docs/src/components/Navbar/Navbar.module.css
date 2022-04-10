@@ -41,9 +41,14 @@
 }
 
 .rightPanel a {
+  cursor: pointer;
   display: flex;
   align-items: center;
   color: #63b38f;
   list-style: none;
   text-decoration: none;
+}
+
+.rightPanel .linkElem {
+  cursor: pointer;
 }

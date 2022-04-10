@@ -15,6 +15,7 @@ const Home = () => {
       <div id="getStarted" />
       <Installation />
       <QuickStart />
+      <div id="api" />
       <Api />
     </Container>
   );
