@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AmeyaJain-25/React-Multi-Step-Form.git"
+    "url": "git+https://github.com/AmeyaJain-25/React-Multi-Stepper.git"
   },
   "author": "AmeyaJain-25",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AmeyaJain-25/React-Multi-Step-Form/issues"
+    "url": "https://github.com/AmeyaJain-25/React-Multi-Stepper/issues"
   },
-  "homepage": "https://github.com/AmeyaJain-25/React-Multi-Step-Form#readme",
+  "homepage": "https://github.com/AmeyaJain-25/React-Multi-Stepper#readme",
   "peerDependencies": {
     "react": ">=16"
   },
