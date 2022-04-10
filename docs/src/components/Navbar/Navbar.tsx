@@ -23,7 +23,18 @@ const Navbar = () => {
           >
             DOC API
           </p>
-          <p className={navbarCss.linkElem}>STAR</p>
+          <a
+            className="github-button"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/AmeyaJain-25/React-Multi-Stepper"
+            // data-color-scheme="no-preference: light; light: light; dark: dark;"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star AmeyaJain-25/React-Multi-Stepper on GitHub"
+          >
+            Star
+          </a>
         </div>
       </div>
     </div>

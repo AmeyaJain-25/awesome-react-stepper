@@ -35,6 +35,7 @@
 .rightPanel {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 2.8em;
   color: #63b38f;
   margin-right: 0.7em;
