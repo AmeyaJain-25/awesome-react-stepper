@@ -5,6 +5,10 @@ assets
 
 babel.config.json
 
+CONTRIBUTING.md
+
+LICENSE
+
 node_modules
 
 .git
