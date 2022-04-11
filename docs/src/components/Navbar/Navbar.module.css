@@ -36,7 +36,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 2.8em;
+  gap: 2.1em;
   color: #63b38f;
   margin-right: 0.7em;
 }
@@ -61,4 +61,10 @@
   background: #e4e4e4;
   padding: 0.5em 1.4em;
   border-radius: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .rightPanel {
+    gap: 0.7em;
+  }
 }

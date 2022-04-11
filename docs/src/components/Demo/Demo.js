@@ -58,6 +58,36 @@ function Demo() {
   </div>
 </Stepper>`}
         />
+        <h1 className={demoCss.cssCode}>CSS code</h1>
+        <CodeSnippet
+          code={`.stepperSubDiv {
+  margin: 1.4em;
+  background: #172539;
+  border-radius: 12px;
+  padding: 1.4em;
+  color: #63b38f;
+}
+
+.stepperSubDiv h1 {
+  font-weight: 500;
+  text-align: center;
+  color: #70cea2;
+}
+
+.stepperBtn {
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background: #172539;
+  color: #63b38f;
+  border-radius: 12px;
+  padding: 0.5em 1.4em;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 1.4em;
+}`}
+        />
       </div>
     </Container>
   );

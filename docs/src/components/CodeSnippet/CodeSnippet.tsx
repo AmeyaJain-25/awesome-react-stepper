@@ -10,9 +10,8 @@ const CodeSnippet = (props: any) => {
       <div
         className={codeSnippetCss.copyCode}
         onClick={() => navigator.clipboard.writeText(code)}
-        title="copy"
       >
-        <CopyIcon />
+        <CopyIcon title="copy" />
       </div>
     </div>
   );

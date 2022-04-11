@@ -37,3 +37,15 @@
   font-weight: 500;
   margin: 1.4em;
 }
+
+.cssCode {
+  font-size: 1.3em;
+  margin: 2.1em 0em 0.7em;
+  font-family: "Recursive", sans-serif;
+  text-align: left;
+  color: #080f1a;
+  background: #e4e4e4;
+  padding: 0.2em 0.5em;
+  border-radius: 6px;
+  width: fit-content;
+}
