@@ -45,11 +45,20 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  color: #63b38f;
+  font-weight: 600;
   list-style: none;
   text-decoration: none;
+  color: #080f1a;
+  background: #e4e4e4;
+  padding: 0.5em 1.4em;
+  border-radius: 50px;
 }
 
 .rightPanel .linkElem {
   cursor: pointer;
+  font-weight: 600;
+  color: #080f1a;
+  background: #e4e4e4;
+  padding: 0.5em 1.4em;
+  border-radius: 50px;
 }
