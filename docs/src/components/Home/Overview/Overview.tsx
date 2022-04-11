@@ -5,7 +5,7 @@ const Overview = () => {
   return (
     <Section title="Overview">
       <p className={overviewCss.overviewContent}>
-        React Multi Stepper is a component library for building highly
+        React Awesome Stepper is a component library for building highly
         customizable multi stepped component. This library helps you to break
         the process of a form or flow into certain steps with availability of
         progress bars, customizable action buttons, responsiveness and developer

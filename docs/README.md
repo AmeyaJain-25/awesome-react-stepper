@@ -1,3 +1,3 @@
-# React Multi Stepper
+# React Awesome Stepper
 
-Go and checkout on the website [React Multi Stepper](https://github.com/AmeyaJain-25/React-Multi-Stepper).
+Go and checkout on the website [React Awesome Stepper](https://github.com/AmeyaJain-25/React-Awesome-Stepper).

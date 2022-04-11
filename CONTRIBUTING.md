@@ -34,11 +34,11 @@ In general, we follow the `fork-and-pull` Git workflow.
 
 3.  _**Navigate**_ to the directory of project :
 
-    `cd React-Multi-Stepper`
+    `cd React-Awesome-Stepper`
 
 4.  Set the _**upstream**_ with original repository :
 
-    `git remote add upstream https://github.com/AmeyaJain-25/React-Multi-Stepper.git`
+    `git remote add upstream https://github.com/AmeyaJain-25/React-Awesome-Stepper.git`
 
 5.  In order to check associated URLs with the project :
 

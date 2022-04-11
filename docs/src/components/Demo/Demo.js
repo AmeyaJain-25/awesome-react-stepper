@@ -1,6 +1,6 @@
 import React from "react";
 import demoCss from "./Demo.module.css";
-import { MultiStepper } from "react-multi-stepper";
+import { Stepper } from "react-awesome-stepper";
 import CodeSnippet from "../CodeSnippet";
 import Container from "../Container";
 
@@ -9,8 +9,10 @@ function Demo() {
     <Container>
       <div className={demoCss.demoParentDiv}>
         <div className={demoCss.demoDiv}>
-          <MultiStepper
-            onSubmit={() => alert("Thank you for using React Multi Stepper!!!")}
+          <Stepper
+            onSubmit={() =>
+              alert("Thank you for using React Awesome Stepper!!!")
+            }
             submitBtn={<button className={demoCss.stepperBtn}>Submit</button>}
             continueBtn={<button className={demoCss.stepperBtn}>Next</button>}
             backBtn={<button className={demoCss.stepperBtn}>Back</button>}
@@ -20,18 +22,20 @@ function Demo() {
             activeProgressBorder="2px solid #17253975"
           >
             <div className={demoCss.stepperSubDiv}>
-              <h1>Welcome to React Multi Stepper</h1>
+              <h1>Welcome to React Awesome Stepper</h1>
             </div>
             <div className={demoCss.stepperSubDiv}>
               <h1>Add your content here!!!</h1>
             </div>
             <div className={demoCss.stepperSubDiv}>
-              <h1>Thank you for using React Multi Stepper</h1>
+              <h1>Thank you for using React Awesome Stepper</h1>
             </div>
-          </MultiStepper>
+          </Stepper>
         </div>
         <CodeSnippet
-          code={`<MultiStepper
+          code={`import { Stepper } from "react-awesome-stepper";
+
+<Stepper
   strokeColor="#17253975"
   fillStroke="#172539"
   activeColor="#172539"
@@ -40,19 +44,19 @@ function Demo() {
   continueBtn={<button className="stepperBtn">Next</button>}
   backBtn={<button className="stepperBtn">Back</button>}
   onSubmit={
-    () => alert("Thank you for using React Multi Stepper!!!")
+    () => alert("Thank you for using React Awesome Stepper!!!")
   }
 >
   <div className="stepperSubDiv">
-    <h1>Welcome to React Multi Stepper</h1>
+    <h1>Welcome to React Awesome Stepper</h1>
   </div>
   <div className="stepperSubDiv">
     <h1>Add your content here!!!</h1>
   </div>
   <div className="stepperSubDiv">
-    <h1>Thank you for using React Multi Stepper</h1>
+    <h1>Thank you for using React Awesome Stepper</h1>
   </div>
-</MultiStepper>`}
+</Stepper>`}
         />
       </div>
     </Container>

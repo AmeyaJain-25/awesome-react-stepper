@@ -1,5 +1,5 @@
 {
-  "name": "react-multi-stepper",
+  "name": "react-awesome-stepper",
   "version": "1.0.0",
   "description": "Highly Customizable Multi Stepper Component for React",
   "main": "dist/index.js",
@@ -7,16 +7,26 @@
   "scripts": {
     "build": "babel src/lib --out-dir dist --copy-files"
   },
+  "keywords": [
+    "react",
+    "multi-stepper",
+    "stepper",
+    "react-multi-stepper",
+    "react-multistepper",
+    "react-stepper",
+    "react-awesome-stepper"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AmeyaJain-25/React-Multi-Stepper.git"
+    "url": "git+https://github.com/AmeyaJain-25/React-Awesome-Stepper.git"
   },
   "author": "AmeyaJain-25",
-  "license": "ISC",
+  "license": "MIT",
+  "private": false,
   "bugs": {
-    "url": "https://github.com/AmeyaJain-25/React-Multi-Stepper/issues"
+    "url": "https://github.com/AmeyaJain-25/React-Awesome-Stepper/issues"
   },
-  "homepage": "https://github.com/AmeyaJain-25/React-Multi-Stepper#readme",
+  "homepage": "https://github.com/AmeyaJain-25/React-Awesome-Stepper#readme",
   "peerDependencies": {
     "react": ">=16"
   },

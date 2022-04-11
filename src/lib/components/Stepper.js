@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import "../styles/multiStepper.css";
+import "../styles/stepper.css";
 
-const MultiStepper = (props) => {
+const Stepper = (props) => {
   const {
     children = <div></div>,
     showProgressBar = true,
@@ -102,7 +102,7 @@ const MultiStepper = (props) => {
   };
 
   return (
-    <div className={"multiStepperDiv"}>
+    <div className={"stepperDiv"}>
       {children.length > 1 && showProgressBar && (
         <div className={`${"progressBarDiv"} ${progressBarClassName}`}>
           <div className={"progressBarContainer"} style={{ width: barWidth }}>
@@ -183,4 +183,4 @@ const MultiStepper = (props) => {
   );
 };
 
-export default MultiStepper;
+export default Stepper;

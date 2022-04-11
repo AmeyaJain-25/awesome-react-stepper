@@ -1,0 +1,16 @@
+src
+public
+docs
+assets
+
+babel.config.json
+
+node_modules
+
+.git
+.gitignore
+
+npm-debug.log
+.npmrc
+
+package-lock.json

@@ -7,29 +7,28 @@ const QuickStart = () => {
     <Section title="QuickStart">
       <h4 className={quickStartCss.contentTitle}>Import And Use</h4>
       <p className={quickStartCss.contentDesc}>
-        Multi Stepper takes each{" "}
+        Stepper takes each{" "}
         <span className={quickStartCss.highlight}>children</span> as a{" "}
         <span className={quickStartCss.highlight}>step</span>. Number of
-        children inside the Multi Stepper will be the number of steps and can be
-        shown with the progress bar. Also, the progress bar can be hidden by
-        setting the{" "}
-        <code className={quickStartCss.highlight}>showProgressBar</code>{" "}
+        children inside the Stepper will be the number of steps and can be shown
+        with the progress bar. Also, the progress bar can be hidden by setting
+        the <code className={quickStartCss.highlight}>showProgressBar</code>{" "}
         attribute to <code className={quickStartCss.highlight}>false</code>.
       </p>
       <CodeSnippet
-        code={`import { MultiStepper } from "react-multi-stepper";
+        code={`import { Stepper } from "react-awesome-stepper";
 
-<MultiStepper>
+<Stepper>
   <div>
-    <h1>Welcome to React Multi Stepper</h1>
+    <h1>Welcome to React Awesome Stepper</h1>
   </div>
   <div>
     <h1>Add your content here!!!</h1>
   </div>
   <div>
-    <h1>Thank you for using React Multi Stepper</h1>
+    <h1>Thank you for using React Awesome Stepper</h1>
   </div>
-</MultiStepper>
+</Stepper>
 `}
       />
     </Section>

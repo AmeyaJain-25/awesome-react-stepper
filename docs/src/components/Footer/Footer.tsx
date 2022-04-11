@@ -14,7 +14,7 @@ const Footer = () => {
         </a>
       </p>
       <iframe
-        src={`https://ghbtns.com/github-btn.html?user=AmeyaJain-25&repo=React-Multi-Stepper&type=star&count=true&size=large`}
+        src={`https://ghbtns.com/github-btn.html?user=AmeyaJain-25&repo=React-Awesome-Stepper&type=star&count=true&size=large`}
         scrolling="0"
         width="170"
         height="30"

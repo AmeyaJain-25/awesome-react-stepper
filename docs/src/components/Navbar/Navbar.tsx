@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className={navbarCss.navbarComponent}>
       <div className={navbarCss.mainNavbar}>
         <Link to="/">
-          <h1>React Multi Stepper</h1>
+          <h1>React Awesome Stepper</h1>
         </Link>
         <div className={navbarCss.rightPanel}>
           <Link to="/demo">DEMO</Link>

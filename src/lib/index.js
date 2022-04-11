@@ -1,3 +1,3 @@
-import MultiStepper from "./components/MultiStepper";
+import Stepper from "./components/Stepper";
 
-export { MultiStepper };
+export { Stepper };
