@@ -6,8 +6,6 @@
 <img src="./assets/cover.png" alt="cover" />
 </p>
 
-<!-- Add GIF of working (from website demo) -->
-
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://github.com/AmeyaJain-25/React-Multi-Stepper) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/AmeyaJain-25/React-Multi-Stepper)
 
 # Overview 🚀
@@ -61,6 +59,10 @@ export default MultiStepperComponent
 # Demo
 
 To view a DEMO, [click here](siteurl/demo)
+
+<p align="center">
+<img src="./assets/demo.gif" alt="cover" />
+</p>
 
 # Documentation
 
