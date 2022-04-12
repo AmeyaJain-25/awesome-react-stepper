@@ -1,6 +1,6 @@
 import React from "react";
 import demoCss from "./Demo.module.css";
-import { Stepper } from "react-awesome-stepper";
+import { Stepper } from "awesome-react-stepper";
 import CodeSnippet from "../CodeSnippet";
 import Container from "../Container";
 
@@ -11,7 +11,7 @@ function Demo() {
         <div className={demoCss.demoDiv}>
           <Stepper
             onSubmit={() =>
-              alert("Thank you for using React Awesome Stepper!!!")
+              alert("Thank you for using Awesome React Stepper!!!")
             }
             submitBtn={<button className={demoCss.stepperBtn}>Submit</button>}
             continueBtn={<button className={demoCss.stepperBtn}>Next</button>}
@@ -22,18 +22,18 @@ function Demo() {
             activeProgressBorder="2px solid #17253975"
           >
             <div className={demoCss.stepperSubDiv}>
-              <h1>Welcome to React Awesome Stepper</h1>
+              <h1>Welcome to Awesome React Stepper</h1>
             </div>
             <div className={demoCss.stepperSubDiv}>
               <h1>Add your content here!!!</h1>
             </div>
             <div className={demoCss.stepperSubDiv}>
-              <h1>Thank you for using React Awesome Stepper</h1>
+              <h1>Thank you for using Awesome React Stepper</h1>
             </div>
           </Stepper>
         </div>
         <CodeSnippet
-          code={`import { Stepper } from "react-awesome-stepper";
+          code={`import { Stepper } from "awesome-react-stepper";
 
 <Stepper
   strokeColor="#17253975"
@@ -44,17 +44,17 @@ function Demo() {
   continueBtn={<button className="stepperBtn">Next</button>}
   backBtn={<button className="stepperBtn">Back</button>}
   onSubmit={
-    () => alert("Thank you for using React Awesome Stepper!!!")
+    () => alert("Thank you for using Awesome React Stepper!!!")
   }
 >
   <div className="stepperSubDiv">
-    <h1>Welcome to React Awesome Stepper</h1>
+    <h1>Welcome to Awesome React Stepper</h1>
   </div>
   <div className="stepperSubDiv">
     <h1>Add your content here!!!</h1>
   </div>
   <div className="stepperSubDiv">
-    <h1>Thank you for using React Awesome Stepper</h1>
+    <h1>Thank you for using Awesome React Stepper</h1>
   </div>
 </Stepper>`}
         />

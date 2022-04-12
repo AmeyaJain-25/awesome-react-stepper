@@ -1,13 +1,13 @@
 import previewCss from "./Preview.module.css";
 import Section from "../../Section";
-import { Stepper } from "react-awesome-stepper";
+import { Stepper } from "awesome-react-stepper";
 
 const Preview = () => {
   return (
     <Section title="Preview">
       <div className={previewCss.previewDiv}>
         <Stepper
-          onSubmit={() => alert("Thank you for using React Awesome Stepper!!!")}
+          onSubmit={() => alert("Thank you for using Awesome React Stepper!!!")}
           submitBtn={<button className={previewCss.stepperBtn}>Submit</button>}
           continueBtn={<button className={previewCss.stepperBtn}>Next</button>}
           backBtn={<button className={previewCss.stepperBtn}>Back</button>}
@@ -17,7 +17,7 @@ const Preview = () => {
           activeProgressBorder="2px solid #17253975"
         >
           <div className={previewCss.stepperSubDiv}>
-            <h1>Welcome to React Awesome Stepper &#128591;</h1>
+            <h1>Welcome to Awesome React Stepper &#128591;</h1>
             <h2>See the highlights on NEXT screen &#128073;</h2>
           </div>
           <div className={previewCss.stepperSubDiv}>
@@ -30,7 +30,7 @@ const Preview = () => {
             </ul>
           </div>
           <div className={previewCss.stepperSubDiv}>
-            <h2>Thank you for using React Awesome Stepper</h2>
+            <h2>Thank you for using Awesome React Stepper</h2>
           </div>
         </Stepper>
       </div>

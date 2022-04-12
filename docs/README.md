@@ -1,3 +1,3 @@
-# React Awesome Stepper
+# Awesome React Stepper
 
-Go and checkout on the website [React Awesome Stepper](https://github.com/AmeyaJain-25/React-Awesome-Stepper).
+Go and checkout on the website [Awesome React Stepper](https://github.com/AmeyaJain-25/Awesome-React-Stepper).

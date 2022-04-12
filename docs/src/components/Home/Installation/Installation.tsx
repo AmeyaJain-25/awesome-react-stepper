@@ -5,9 +5,9 @@ import installationCss from "./Installation.module.css";
 const Installation = () => {
   return (
     <Section title="Installation">
-      <CodeSnippet code={`npm install react-awesome-stepper`} />
+      <CodeSnippet code={`npm install awesome-react-stepper`} />
       <p>Or</p>
-      <CodeSnippet code={`yarn add react-awesome-stepper`} />
+      <CodeSnippet code={`yarn add awesome-react-stepper`} />
     </Section>
   );
 };
