@@ -2,7 +2,7 @@
 <h3 align="center"> Highly Customizable Multi Stepper Component for React 🚀 </h3>
 
 <p align="center">
-<img src="https://res.cloudinary.com/ameyajain-25/image/upload/v1649702498/React-Awesome-Stepper/cover_xafiq0.png" alt="cover" />
+<img src="https://res.cloudinary.com/ameyajain-25/image/upload/v1649787923/Awesome%20React%20Stepper/cover_ckq1mq.png" alt="cover" />
 </p>
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://github.com/AmeyaJain-25/Awesome-React-Stepper) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/AmeyaJain-25/Awesome-React-Stepper)
@@ -58,7 +58,7 @@ export default StepperComponent
 To view a DEMO, [click here](https://awesome-react-stepper.vercel.app/demo)
 
 <p align="center">
-<img src="https://res.cloudinary.com/ameyajain-25/image/upload/v1649702515/React-Awesome-Stepper/demo_gllwzi.gif" alt="cover" />
+<img src="https://res.cloudinary.com/ameyajain-25/image/upload/v1649787909/Awesome%20React%20Stepper/demo_ojqwqe.gif" alt="cover" />
 </p>
 
 # Documentation
