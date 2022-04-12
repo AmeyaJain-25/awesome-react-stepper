@@ -10,7 +10,7 @@
 # Overview 🚀
 
 `React Awesome Stepper` is a component library for building highly customizable multi stepped component. This library helps you to break the process of a form or flow into certain steps with availability of progress bars, customizable action buttons, responsiveness and developer friendly library. You can hide/unhide progress bar as per your needs. Action buttons can also be replaced with your theme and requirement. Hence, a perfect solution for your stepper functionality.
-Read the complete in detail documentation on the [website](siteurl/).
+Read the complete in detail documentation on the [website](https://react-awesome-stepper.vercel.app/).
 
 # Getting Started 🎬
 
@@ -55,7 +55,7 @@ export default StepperComponent
 
 # Demo
 
-To view a DEMO, [click here](siteurl/demo)
+To view a DEMO, [click here](https://react-awesome-stepper.vercel.app/demo)
 
 <p align="center">
 <img src="https://res.cloudinary.com/ameyajain-25/image/upload/v1649702515/React-Awesome-Stepper/demo_gllwzi.gif" alt="cover" />
@@ -63,7 +63,7 @@ To view a DEMO, [click here](siteurl/demo)
 
 # Documentation
 
-For other features of the `stepper` to make it customizable, check the [documentation](siteurl/).
+For other features of the `stepper` to make it customizable, check the [documentation](https://react-awesome-stepper.vercel.app/).
 
 # Contributing 💡
 
