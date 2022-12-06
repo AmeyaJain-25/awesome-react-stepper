@@ -2,26 +2,40 @@
   "name": "awesome-react-stepper",
   "version": "1.0.0",
   "description": "Highly Customizable Multi Stepper Component for React",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "build": "babel src/lib --out-dir dist --copy-files"
+    "copy-files": "npm run copy-css:esm && npm run copy-css:cjs",
+    "copy-css:esm": "copyfiles -u 1 \"src/**/*.css\" dist/esm",
+    "copy-css:cjs": "copyfiles -u 1 \"src/**/*.css\" dist/cjs",
+    "clean": "rimraf dist/",
+    "build": "npm run build:esm && npm run build:cjs && npm run copy-files",
+    "build:esm": "tsc --module esnext --outDir dist/esm",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepare": "npm run clean && npm run build"
   },
   "keywords": [
-    "react",
-    "multi-stepper",
+    "awesome-react-stepper",
     "stepper",
-    "react-multi-stepper",
-    "react-multistepper",
     "react-stepper",
     "react-awesome-stepper",
-    "awesome-react-stepper"
+    "react-component",
+    "react-multi-step",
+    "react-multi-step-form",
+    "react-multi-step-form-component",
+    "multi-stepper",
+    "react-multi-stepper",
+    "react-multistepper",
+    "react",
+    "react-typescript",
+    "typescript"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AmeyaJain-25/Awesome-React-Stepper.git"
   },
-  "author": "AmeyaJain-25",
+  "author": "Ameya Jain (AmeyaJain-25)",
   "license": "MIT",
   "private": false,
   "bugs": {
@@ -32,11 +46,10 @@
     "react": ">=16"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.7",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
-    "react-dom": "^17.0.2"
-  },
-  "dependencies": {}
+    "@types/react": "^18.0.26",
+    "copyfiles": "^2.4.1",
+    "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.3"
+  }
 }
