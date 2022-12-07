@@ -6,6 +6,7 @@
 </p>
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://github.com/AmeyaJain-25/Awesome-React-Stepper) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/AmeyaJain-25/Awesome-React-Stepper)
+[![npm version](https://badge.fury.io/js/awesome-react-stepper.svg)](https://badge.fury.io/js/awesome-react-stepper)
 
 # Overview 🚀
 
@@ -31,7 +32,7 @@ yarn add awesome-react-stepper
 ## Import And Use
 
 ```jsx highlight={1,6}
-import { Stepper } from "awesome-react-stepper";
+import Stepper from "awesome-react-stepper";
 ...
 function StepperComponent(props) {
     return (

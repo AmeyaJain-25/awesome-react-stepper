@@ -18,11 +18,19 @@
   margin: 0 auto;
 }
 
+.mainNavbar .logoHeader {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 0.7em;
+}
+
 .mainNavbar h1 {
-  font-family: "Recursive", sans-serif;
+  font-family: 'Recursive', sans-serif;
   font-size: 1.6em;
   font-weight: 500;
   color: #63b38f;
+  margin: 0.2em 0em;
 }
 
 .mainNavbar a {
@@ -45,13 +53,8 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  font-weight: 600;
   list-style: none;
   text-decoration: none;
-  color: #080f1a;
-  background: #e4e4e4;
-  padding: 0.5em 1.4em;
-  border-radius: 50px;
 }
 
 .rightPanel .linkElem {
