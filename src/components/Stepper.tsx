@@ -25,7 +25,7 @@ const Stepper = (props: StepperProps) => {
     allowClickControl = true,
   } = props;
 
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState<number>(0);
 
   useEffect(() => {
     if (
