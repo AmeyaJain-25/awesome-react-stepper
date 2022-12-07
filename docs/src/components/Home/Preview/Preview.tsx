@@ -1,13 +1,13 @@
-import previewCss from "./Preview.module.css";
-import Section from "../../Section";
-import { Stepper } from "awesome-react-stepper";
+import previewCss from './Preview.module.css';
+import Section from '../../Section';
+import Stepper from 'awesome-react-stepper';
 
 const Preview = () => {
   return (
     <Section title="Preview">
       <div className={previewCss.previewDiv}>
         <Stepper
-          onSubmit={() => alert("Thank you for using Awesome React Stepper!!!")}
+          onSubmit={() => alert('Thank you for using Awesome React Stepper!!!')}
           submitBtn={<button className={previewCss.stepperBtn}>Submit</button>}
           continueBtn={<button className={previewCss.stepperBtn}>Next</button>}
           backBtn={<button className={previewCss.stepperBtn}>Back</button>}

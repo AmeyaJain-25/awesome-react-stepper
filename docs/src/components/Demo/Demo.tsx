@@ -1,8 +1,8 @@
-import React from "react";
-import demoCss from "./Demo.module.css";
-import { Stepper } from "awesome-react-stepper";
-import CodeSnippet from "../CodeSnippet";
-import Container from "../Container";
+import React from 'react';
+import demoCss from './Demo.module.css';
+import Stepper from 'awesome-react-stepper';
+import CodeSnippet from '../CodeSnippet';
+import Container from '../Container';
 
 function Demo() {
   return (
@@ -10,9 +10,7 @@ function Demo() {
       <div className={demoCss.demoParentDiv}>
         <div className={demoCss.demoDiv}>
           <Stepper
-            onSubmit={() =>
-              alert("Thank you for using Awesome React Stepper!!!")
-            }
+            onSubmit={(step) => alert(`Thank you!!! Final Step -> ${step}`)}
             submitBtn={<button className={demoCss.stepperBtn}>Submit</button>}
             continueBtn={<button className={demoCss.stepperBtn}>Next</button>}
             backBtn={<button className={demoCss.stepperBtn}>Back</button>}
@@ -33,7 +31,7 @@ function Demo() {
           </Stepper>
         </div>
         <CodeSnippet
-          code={`import { Stepper } from "awesome-react-stepper";
+          code={`import Stepper from "awesome-react-stepper";
 
 <Stepper
   strokeColor="#17253975"
@@ -44,7 +42,7 @@ function Demo() {
   continueBtn={<button className="stepperBtn">Next</button>}
   backBtn={<button className="stepperBtn">Back</button>}
   onSubmit={
-    () => alert("Thank you for using Awesome React Stepper!!!")
+    (step) => alert(\`Thank you!!! Final Step -> \${step}\`)
   }
 >
   <div className="stepperSubDiv">

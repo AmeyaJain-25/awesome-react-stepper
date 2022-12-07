@@ -1,5 +1,6 @@
-import { Link, useNavigate } from "react-router-dom";
-import navbarCss from "./Navbar.module.css";
+import { Link, useNavigate } from 'react-router-dom';
+import navbarCss from './Navbar.module.css';
+import { ReactComponent as TypescriptSVG } from '../../assets/typescript.svg';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -7,18 +8,31 @@ const Navbar = () => {
   return (
     <div className={navbarCss.navbarComponent}>
       <div className={navbarCss.mainNavbar}>
-        <Link to="/">
+        <Link to="/" className={navbarCss.logoHeader}>
           <h1>Awesome React Stepper</h1>
+          <TypescriptSVG />
         </Link>
         <div className={navbarCss.rightPanel}>
-          <Link to="/demo">DEMO</Link>
+          <a
+            href="https://badge.fury.io/js/awesome-react-stepper"
+            target={'_blank'}
+          >
+            <img
+              src="https://badge.fury.io/js/awesome-react-stepper.svg"
+              alt="npm version"
+              height="18"
+            />
+          </a>
+          <Link to="/demo" className={navbarCss.linkElem}>
+            DEMO
+          </Link>
           <p
             className={navbarCss.linkElem}
             onClick={async () => {
-              await navigate("/");
+              await navigate('/');
               document
-                .getElementById("api")
-                ?.scrollIntoView({ behavior: "smooth" });
+                .getElementById('api')
+                ?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
             DOC API
