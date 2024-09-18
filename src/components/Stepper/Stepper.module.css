@@ -1,0 +1,124 @@
+.root {
+  --stepper-icon-size-xs: 34px;
+  --stepper-icon-size-sm: 36px;
+  --stepper-icon-size-md: 42px;
+  --stepper-icon-size-lg: 48px;
+  --stepper-icon-size-xl: 52px;
+
+  --stepper-icon-size: var(--stepper-icon-size-md);
+  --stepper-color: tomato;
+  --stepper-content-padding: 12px;
+  --stepper-spacing: 12px;
+  --stepper-radius: 1000px;
+  --stepper-fz: 16px;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  align-items: center;
+}
+
+.separator {
+  --_separator-offset: calc(var(--stepper-icon-size) / 2 - 1px);
+  --_separator-height: 2px;
+  --_separator-ml: 12px;
+  --_separator-mr: 12px;
+  --_separator-mt: 0;
+  --_separator-mb: 0;
+  --_separator-bg: teal;
+
+  transition: background-color 150ms ease;
+  flex: 1;
+  height: var(--_separator-height);
+  width: var(--_separator-width);
+  margin-left: var(--_separator-ml);
+  margin-right: var(--_separator-mr);
+  margin-top: var(--_separator-mt);
+  margin-bottom: var(--_separator-mb);
+  background-color: var(--_separator-bg);
+
+  &[data-active] {
+    --_separator-bg: var(--stepper-color);
+  }
+}
+
+.content {
+  padding-top: var(--stepper-content-padding);
+}
+
+.step {
+  --_step-color: var(--step-color, var(--stepper-color));
+  display: flex;
+  cursor: var(--_step-cursor, default);
+
+  &[data-allow-click] {
+    --_step-cursor: pointer;
+  }
+}
+
+.stepWrapper {
+  position: relative;
+}
+
+.stepIcon {
+  --_step-icon-bg: gray;
+  --_step-icon-border-color: black;
+  --_step-icon-color: darkgray;
+
+  height: var(--stepper-icon-size);
+  width: var(--stepper-icon-size);
+  min-height: var(--stepper-icon-size);
+  min-width: var(--stepper-icon-size);
+  border-radius: var(--stepper-radius);
+  font-size: var(--stepper-fz);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: bold;
+  transition: background-color 150ms ease, border-color 150ms ease;
+  background-color: var(--_step-icon-bg);
+  border: 2px solid var(--_step-icon-border-color);
+  color: var(--_step-icon-color);
+
+  &[data-progress] {
+    --_step-icon-border-color: var(--_step-color);
+  }
+
+  &[data-completed] {
+    --_step-icon-color: var(--mantine-color-white);
+    --_step-icon-bg: var(--_step-color);
+    --_step-icon-border-color: var(--_step-color);
+  }
+}
+
+.stepCompletedIcon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mantine-color-white);
+}
+
+.stepBody {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.stepLabel {
+  font-weight: 500;
+  font-size: var(--stepper-fz);
+  line-height: 1;
+}
+
+.stepDescription {
+  margin-top: calc(var(--stepper-spacing) / 3);
+  margin-bottom: calc(var(--stepper-spacing) / 3);
+  font-size: calc(var(--stepper-fz) - 2px);
+  line-height: 1;
+  color: var(--mantine-color-dimmed);
+}
