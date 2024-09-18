@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/stepper.css';
-import { StepperProps } from '../types/Stepper.types';
+import '~/styles/Stepper.css';
+import { StepperProps } from '~/types/Stepper.types';
 
 const Stepper = (props: StepperProps) => {
   const {
