@@ -31,6 +31,7 @@ export declare type StepperProps = {
   stroke?: number;
   activeColor?: string;
   activeProgressBorder?: string;
+  inactiveColor?: string;
   progressBarClassName?: string;
   contentBoxClassName?: string;
   allowClickControl?: boolean;
