@@ -125,4 +125,11 @@ export const apiData: any[] = [
     default: 'true',
     description: `Allow user to click the bar or stepper buttons to navigate to that step.`,
   },
+  {
+    key: 19,
+    property: 'inactiveColor',
+    type: 'string',
+    default: '#ffffff',
+    description: `Color of the inactive step circle.`,
+  },
 ];

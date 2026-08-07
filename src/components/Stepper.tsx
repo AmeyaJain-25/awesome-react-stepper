@@ -20,6 +20,7 @@ const Stepper = (props: StepperProps) => {
     stroke = 2,
     activeColor = '#3A4047',
     activeProgressBorder = '2px solid #f3f4f5',
+    inactiveColor = '#fff',
     progressBarClassName = '',
     contentBoxClassName = '',
     allowClickControl = true,
@@ -51,7 +52,7 @@ const Stepper = (props: StepperProps) => {
           element.style.background = activeColor;
           element.style.border = activeProgressBorder;
         } else {
-          element.style.background = '#fff';
+          element.style.background = inactiveColor;
           element.style.border = '2px solid #3A4047';
         }
       });
